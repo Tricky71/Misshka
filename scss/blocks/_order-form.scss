@@ -1,0 +1,105 @@
+.order-form__main,
+.order-form__list {
+    @include reset-list;
+}
+
+// .order-form__field {
+//     &:nth-child(even) {
+//         background-color: #f1f1f1;
+//     }
+// }
+
+.order-form__inner {
+    position: relative;
+    border-top: 1px solid #62d1ba;
+        &--type {
+           padding: 32px 0 40px 62px;
+        }
+        &--color {
+            padding: 32px 0 40px;
+        }
+        &--name {
+            padding: 40px 0;
+        }
+        &--tel {
+            padding: 32px 0 40px;
+        }
+        &--email {
+            padding: 32px 0 40px;
+        }
+        &--additional {
+            padding-top: 32px;
+        }
+}
+
+.order-form__title {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 62px;
+    font-size: 17px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #63d1bb;
+    background-color: #ffffff;
+
+}
+
+.order-form__item {
+    &--type {
+        margin-bottom: 35px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    } 
+}
+
+.order-form__label {
+    margin: 0;
+    padding: 0;
+    display: block;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 700;
+}
+
+.order-form__input--radio:checked+.order-form__label-type:after {
+        display: block;
+    }
+
+
+.order-form__label-type {
+    position: relative;
+        &::before {
+           position: absolute;
+           content: "";
+           box-sizing: border-box;
+           width: 38px;
+           height: 38px;
+           border: 2px solid #000000;
+           border-radius: 50%;
+           top: 50%;
+           left: -62px;
+           transform: translateY(-50%);
+
+        }
+        &::after {
+            display: none;
+            position: absolute;
+            content: "";
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            top: 50%;
+            left: -62px;
+            transform: translateX(75%) translateY(-50%);
+            background-color: #62d1ba;
+        }
+}
+
+.order-form__input--radio:checked+.order-form__label-type:after {
+        display: block;
+    }
+

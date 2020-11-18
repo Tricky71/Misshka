@@ -1,0 +1,23 @@
+.order-promo__content {
+    margin: 0;
+    padding: 0;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    font-size: 13px;
+
+}
+
+@media (min-width: $tablet-width) {
+    .order-promo__content {
+        padding: 65px 0 85px;
+        font-size: 17px;
+        line-height: 30px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .order-promo__content {
+        padding: 130px 175px 30px;
+
+    }
+}

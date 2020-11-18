@@ -1,0 +1,36 @@
+.main-toggle {
+    width: 20px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+       &:hover {
+           opacity: 0.6;
+       }
+}
+
+.main-toggle__center {
+    position: relative;
+    width: 20px;
+    height: 2px;
+    background-color: #000000;
+        &::before {
+           content: ("");
+           position: absolute;
+           height: 2px;
+           left: 0;
+           right: 0;
+           top: -6px;
+           background-color: inherit;
+        }
+        &::after {
+           content: ("");
+           position: absolute;
+           height: 2px;
+           left: 0;
+           right: 0;
+           top: 6px;
+           background-color: inherit;
+        }
+}

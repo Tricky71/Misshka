@@ -1,0 +1,36 @@
+.main-development {
+    padding: 22px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.main-development__title {
+    margin-right: 30px;
+    font-size: 19px;
+    line-height: 19px;
+}
+
+.main-development__link {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.main-development__link-icon {
+    fill: #63d1bb;
+       &:hover {
+           fill: #46c1ae;
+        }
+        &:active {
+            fill: #bde3dd;
+        }
+}
+
+@media (min-width: $tablet-width) {
+    .main-development {
+        padding: 0;
+    }
+}
+

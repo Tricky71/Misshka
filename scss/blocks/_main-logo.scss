@@ -1,0 +1,22 @@
+.main-logo :hover {
+    text-decoration: none;
+    opacity: 0.6;
+}
+
+.main-logo__svg {
+    display: block;
+}
+
+@media (min-width: $tablet-width) {
+    .main-logo__svg {
+        width: 112px;
+        height: 46px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .main-logo__svg {
+        width: 149px;
+        height: 72px;
+    }
+}

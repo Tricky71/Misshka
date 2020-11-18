@@ -1,0 +1,26 @@
+.catalog-page__content {
+    margin-bottom: 30px;
+}
+
+.catalog-page__production {
+    margin-bottom: 58px;
+}
+
+@media (min-width: $tablet-width) {
+    .catalog-page__content {
+    margin-bottom: 53px;
+}
+    .catalog-page__production {
+        margin-bottom: 65px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .catalog-page__content {
+        margin-bottom: 57px;
+    }
+
+    .catalog-page__production {
+        margin-bottom: 105px;
+    }
+}

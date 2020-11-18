@@ -1,0 +1,14 @@
+$default-font:'Open Sans', sans-serif;
+// $accent: orange;
+$text: #444444;
+
+// Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
+$grid-gutter-width: 30px;
+$grid-columns: 12;
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+$container-max-widths: (xs: 290px, sm: 540px, md: 698px, lg: 960px, xl: 1080px);
+
+$gutter: $grid-gutter-width;
+
+$tablet-width: 768px;
+$desktop-width: 1150px;

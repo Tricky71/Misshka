@@ -1,0 +1,247 @@
+.main-contacts {
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.main-contacts__inner {
+    width: 81%;
+    margin: 0 auto;
+}
+
+.main-contacts__title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 45px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.main-contacts__info {
+    margin-bottom: 45px;
+}
+
+.main-contacts__email {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    line-height: 30px;
+}
+
+.main-contacts__email-title,
+.main-contacts__adress-title {
+    width: 30%;
+}
+
+.main-contacts__map {
+    margin-bottom: 40px;
+}
+
+
+
+.main-contacts__email-adress {
+    position: relative;
+    // width: 70%;
+    color: #000000;
+    
+    &:hover {
+        color: #46c1ae;
+        text-decoration: none;
+    }
+    &:active {
+        color: #c7ece7;
+        &::after {
+            background-color: #c7ece7;
+        }
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #46c1ae;
+        height: 1px;
+    }
+    
+}
+
+.main-contacts__adress {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main-contacts__adress-text {
+    margin: 0;
+    padding: 0;
+    width: 70%;
+    text-align: right;
+    line-height: 30px;
+}
+
+.main-contacts__map {
+    width: 100%;
+    min-height: 457px;
+    // background-color: #8d8d8d;
+}
+
+.main-contacts__write {
+    display: block;
+    width: 100%;
+    padding: 16px 30px;
+    border: 2px solid #444444;
+    font-size: 18px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    color: #444444;
+        &:hover {
+           background-color: #444444;
+           color: #ffffff;
+           text-decoration: none;
+        }
+        &:active {
+            color: #8d8d8d;
+        }
+} 
+
+@media (min-width: $tablet-width) {
+    .main-contacts {
+        padding-top: 70px;
+    }
+
+    .main-contacts .main-contacts__inner {
+        width: 100%;
+    }
+
+    .main-contacts__text {
+        width: 100%;
+    }
+
+    .main-contacts__text-wrapper {
+        width: 87%;
+        margin: 0 auto;
+        
+    }
+
+
+    .main-contacts__title {
+        // padding: 0 50px;
+        margin-bottom: 55px;
+        font-size: 43px;
+        line-height: 50px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 47px;
+            height: 81px;
+            top: -20px;
+            right: 0;
+            background-image: url(../img/flag.png);
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            background-size: auto;
+        }
+    }
+
+    .main-contacts__info {
+        // padding: 0 50px;
+        margin-bottom: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        font-size: 17px;
+        line-height: 30px;
+    }
+
+    .main-contacts__email,
+    .main-contacts__adress {
+        width: 50%;
+        justify-content: flex-start;
+    }
+
+    .main-contacts__email-title,
+    .main-contacts__adress-title {
+        width: 22%;
+    }
+
+    .main-contacts__email-adress {
+        &::after {
+            bottom: 15px;
+        }
+    }
+
+    .main-contacts__adress-text {
+        text-align: left;
+    }
+
+    .main-contacts__write {
+        width: 230px;
+        margin: 0 auto;
+        font-size: 17px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .main-contacts {
+        padding-top: 88px;
+    }
+
+    .main-contacts .main-contacts__inner {
+        width: 1050px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .main-contacts__text,
+    .main-contacts__map {
+        width: 50%;
+    }
+
+    .main-contacts__write {
+        margin: 0;
+    }
+
+    .main-contacts__text {
+        padding-top: 80px;
+        padding-left: 175px;
+    }
+
+    .main-contacts__text-wrapper {
+        width: 100%;
+    }
+
+    .main-contacts__title {
+        font-size: 53px;
+        line-height: 57px;
+            &::before {
+               left: -175px;
+            }
+    }
+
+    .main-contacts__info {
+        flex-direction: column;
+    }
+
+    .main-contacts__email,
+    .main-contacts__adress {
+        width: 100%;
+    }
+
+    .main-contacts__email-adress {
+        &::after {
+            bottom: 0;
+        }
+    }
+
+    .main-contacts__map {
+        margin-bottom: 0;
+    }
+
+    .main-contacts__write {
+        transform: translateX(175px) translateY(-56px);
+    }
+}
